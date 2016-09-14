@@ -1,5 +1,7 @@
 <vdb name="sqlserver" version="1">
     <model visible="true" name="bqt">
+        <property name="importer.schemaPattern" value="bqt2"/>
+        <property name="importer.useFullSchemaName" value="false"/>
         <source name="bqt" translator-name="sqlserver" connection-jndi-name="java:/sqlserver-ds"/>           
     </model>
 </vdb>

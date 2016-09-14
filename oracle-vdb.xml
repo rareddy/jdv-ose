@@ -1,0 +1,7 @@
+<vdb name="oracle" version="1">
+    <model visible="true" name="Parts">
+        <property name="importer.schemaPattern" value="products"/>         
+        <property name="importer.useFullSchemaName" value="false"/>         
+        <source name="Parts" translator-name="oracle" connection-jndi-name="java:/oracle-ds"/>           
+    </model>
+</vdb>
