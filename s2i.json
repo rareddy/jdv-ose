@@ -542,7 +542,7 @@
                             {
                                 "name": "jdv-sample-volume",
                                 "configMap": {
-                                    "name": "jdv-example-sqlserver-configmap"
+                                    "name": "jdv-sqlserver-configmap"
                                 }
                             }
                         ]
