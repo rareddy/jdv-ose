@@ -1,0 +1,39 @@
+{
+    "kind": "List",
+    "apiVersion": "v1",
+    "metadata": {
+        "name": "jboss-image-streams",
+        "annotations": {
+            "description": "ImageStream definitions for JBoss Middleware products."
+        }
+    },
+    "items": [
+        {
+            "kind": "ImageStream",
+            "apiVersion": "v1",
+            "metadata": {
+                "name": "jdv-image",
+                 "annotations": {
+                    "description": "Example Image for JDV",
+                    "openshift.io/image.insecureRepository": "true"
+                }
+            },
+            "spec": {
+                "dockerImageRepository": "ce-os-registry.usersys.redhat.com:5000/jboss-jdv-6/jdv-image",
+                "tags": [
+                    {
+                        "name": "1.0",
+                        "annotations": {
+                            "description": "datavirt",
+                            "iconClass": "icon-jdv",
+                            "tags": "datavirt",
+                            "supports":"datavirt:6.3",
+                            "version": "1.0"
+                        }
+                    }
+                ]
+            }
+        }
+
+    ]
+}

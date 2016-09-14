@@ -303,16 +303,12 @@
                             "from": {
                                 "kind": "ImageStreamTag",
                                 "namespace": "${IMAGE_STREAM_NAMESPACE}",
-                                "name": "jdv-sample:1.0"
+                                "name": "jdv-image:1.0"
                             },
                             "paths": [
                                 {
                                     "destinationDir": ".",
-                                    "sourcePath": "/injected-jdv"
-                                },
-                                {
-                                    "destinationDir": ".",
-                                    "sourcePath": "/injected-eap"
+                                    "sourcePath": "/injected"
                                 }
                              ]
                         }
@@ -338,7 +334,7 @@
                             },
                             {
                                 "name": "INJECTED_DIRECTORIES",
-                                "value": "injected-jdv,injected-eap"
+                                "value": "injected"
                             }
                         ]
                     }
@@ -542,7 +538,7 @@
                             {
                                 "name": "jdv-sample-volume",
                                 "configMap": {
-                                    "name": "jdv-sqlserver-configmap"
+                                    "name": "jdv-image-configmap"
                                 }
                             }
                         ]
