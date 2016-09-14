@@ -1,0 +1,5 @@
+<vdb name="sqlserver" version="1">
+    <model visible="true" name="bqt">
+        <source name="bqt" translator-name="sqlserver" connection-jndi-name="java:/sqlserver-ds"/>           
+    </model>
+</vdb>
