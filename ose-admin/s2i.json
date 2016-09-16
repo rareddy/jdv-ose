@@ -333,7 +333,7 @@
                                 "value": "${CONTEXT_DIR}"
                             },
                             {
-                                "name": "INJECTED_DIRECTORIES",
+                                "name": "CUSTOM_INSTALL_DIRECTORIES",
                                 "value": "injected"
                             }
                         ]
