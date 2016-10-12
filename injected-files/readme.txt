@@ -1,0 +1,3 @@
+Any files go here. you can define directories here, note that the path in resource-adapters needs to be relative to this root directory. During the image creation, these files will be copied into the image. Typically in production environment, you want mount a NFS drive to the OpenShift environment, and then use that mount in your resource-adapter. This is another way to provide the files ad-hoc, but note these can not updated once deployed.
+
+These files will be available at path "/home/jboss/source/injected-files", any resource-adapter need to use this path as base path to the files
