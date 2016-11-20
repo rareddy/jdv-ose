@@ -1,12 +1,10 @@
 FROM scratch
 
-LABEL Name="jboss-datavirt-6/jdv-extensions" \
+LABEL Name="jdv-example" \
       Version="latest" \
-      Release="latest" \
-      Architecture="x86_64" 
 
-COPY injected-files /injected-files
-COPY injected-modules /injected-modules
-COPY install.sh /install.sh
-COPY install.properties /install.properties
+COPY files /extensions/
+COPY modules /extensions/modules/
+COPY install.sh /extensions/
+COPY install.properties /extensions/
 
