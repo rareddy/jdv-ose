@@ -1,7 +1,7 @@
 FROM scratch
 
 LABEL Name="jdv-example" \
-      Version="latest" \
+      Version="latest"
 
 COPY files /extensions/
 COPY modules /extensions/modules/
