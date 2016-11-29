@@ -1,5 +1,12 @@
 # jdv-ose-dba
 
+#### To import an image and create the template in fresh openshift environment like CDK or 'oc cluster up'
+```
+oc create -n openshift -f is.json
+oc create  -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/datavirt/datavirt63-extensions-support-s2i.json
+oc -n openshift import-image jboss-datavirt63-openshift
+```
+
 #### Login into a Openshift instance
 ```
 oc login ce-os-rhel-master.usersys.redhat.com:8443
@@ -20,12 +27,15 @@ or
 ```
 oc create serviceaccount datavirt-service-account
 oc secrets new datavirt-app-secret keystore.jks jgroups.jceks
-oc secrets new datavirt-app-config datasources.properties
 
 # to delete
 #oc delete secret datavirt-app-secret
 #oc delete serviceaccount datavirt-service-account
 #oc delete secret datavirt-app-config
+```
+#### Create secret for the data sources
+```
+oc secrets new datavirt-app-config datasources.properties
 ```
 
 Now Log into https://ce-os-rhel-master.usersys.redhat.com:8443/console
