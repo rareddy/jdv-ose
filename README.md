@@ -2,6 +2,7 @@
 
 #### To import an image and create the template in fresh openshift environment like CDK or 'oc cluster up'
 ```
+oc login -u system:admin
 oc create -n openshift -f is.json
 oc create  -n openshift -f https://raw.githubusercontent.com/jboss-openshift/application-templates/master/datavirt/datavirt63-extensions-support-s2i.json
 oc -n openshift import-image jboss-datavirt63-openshift
